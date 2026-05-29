@@ -99,7 +99,7 @@ export async function GET(request: Request) {
           name: title,
           repo_name: repo.name,
           description: description,
-          url: repo.html_url,
+          url: repo.homepage || repo.html_url,
           homepage: repo.homepage,
           stars: repo.stargazers_count,
           language: repo.language,
